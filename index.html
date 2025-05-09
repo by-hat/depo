@@ -1,0 +1,94 @@
+<!--author instagram adress: sedat.drmaz -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Cilo"/>
+        <meta name="theme-color" content="rgba(32,35,44, 0.7)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Cilo</title>
+        <link rel="icon" href="https://www.dropbox.com/scl/fi/341ycv9vsgojywkt2k0i6/logo.jpg?rlkey=6vm4ofubs6lrxtmwazk7bjhtg&st=n0mupftg&dl=1"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    </head>
+    
+    <body oncontextmenu="return false">
+        <div class="dot-spinner"><div class="dot-spinner__dot"></div><div class="dot-spinner__dot"></div><div class="dot-spinner__dot"></div><div class="dot-spinner__dot"></div><div class="dot-spinner__dot"></div><div class="dot-spinner__dot"></div><div class="dot-spinner__dot"></div><div class="dot-spinner__dot"></div></div>
+        <header>
+            <h2 translate="no">Cilo &#9728;</h2>
+            <input type="checkbox" id="burger" checked>
+            <label class="burger" for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <nav>
+                <button onclick="showSection('home')" class="active-btn"><i class="fas fa-house"></i>&nbsp; &nbsp; Home Page</button>
+                <button onclick="showSection('settings')"><i class="fas fa-gear"></i>&nbsp; &nbsp; Settings</button>
+                <button onclick="showSection('info')"><i class="fas fa-circle-info"></i>&nbsp; &nbsp; Info</button>
+            </nav>
+            
+        </header>
+        
+        <div id="home" class="section">
+            <div class="profile-card">
+                <img ondragstart="return false" loading="lazy" src="https://www.dropbox.com/scl/fi/ejt6ed71bmbxbrqaxkeqq/image1.jpg?rlkey=wgvoqecw4rowpqjkyr953mgvl&st=8nng3c7y&dl=1" alt="Sedat Durmaz" />
+                <h2 translate="no">Sedat Durmaz</h2>
+                <br/><br/>
+                <div id="terminal"></div><span class="cursor">|</span>
+                <br/><br/><br/>
+                
+                <div class="social-icons">
+                    <a href="https://t.me/cilo01010"><i class="fab fa-telegram"></i></a>
+                    <a href="mailto:by.hat@outlook.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/sedat.drmaz"><i class="fab fa-instagram"></i></a>
+                
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="space"></div>
+        </div>
+        
+        <div id="settings" class="section" style="display: none;">
+            <div class="space"></div>
+            <center>
+                <h1>Settings</h1>
+                <br><br><br><br>
+                <h3>Theme</h3>
+                <br>
+                <button class="toggle-btn" onclick="toggleMode()" id="toggleButton">Dark Mode</button>
+                <br><br>
+                <h3>Share</h3>
+                <br><br>
+                <button class="toggle-btn" id="shareButton">Share Site</button>
+            </center>
+            <div class="space"></div>
+        </div>
+        
+        <div id="info" class="section" style="display: none;">
+        <div class="space"></div>
+        <center>
+            <h1>Info</h1>
+            <br><br><br><br>
+            <img class="logo" ondragstart="return false" loading="lazy" alt="logo" src="https://www.dropbox.com/scl/fi/341ycv9vsgojywkt2k0i6/logo.jpg?rlkey=6vm4ofubs6lrxtmwazk7bjhtg&st=n0mupftg&dl=1"/>
+            <br/><br/>
+            <p>Developer: Sedat Durmaz</p>
+            <br>
+            <p>Location: Merdin/ Kerboran</p>
+            <br>
+            <p> Current Link : <a style="color:blue;"href="https://w3spaces.#.com"> cilo.com</a></p>
+            <br>
+            <p> Version: 3.82.198</p>
+            <br>
+            <p> Package: com.cilo.android</p>
+        </center>
+        <div class="space"></div>
+        </div>
+        
+        <canvas id="stars"></canvas>
+        <script src="scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
